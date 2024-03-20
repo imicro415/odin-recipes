@@ -1,8 +1,9 @@
 #index-title  {
  	font-family:'Segoe UI',  Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 42px;
-	text-align: center;
 	font-weight: 800;
+	text-align: center;
+	margin-bottom: 1rem;
 }
 .index-ul {
 	font-family: Arial, Helvetica, sans-serif;
@@ -12,13 +13,20 @@
 	cursor: pointer;
 	text-decoration: none;
 	padding-inline-start: 0;
+	margin: 0 auto;
+	width: fit-content;
 }
 .index-ul li {
-	padding: 0.5rem;
+	padding: 1rem;
+	background-color: olive;
+	margin-bottom: 0.5rem;
+	border: 2px solid black;
+	width: 100%;
 }
 .index-ul a {
-	color: black;
+	color:black;
 	text-decoration: none;
+	display: block;
 }
 
 .recipe-img {
@@ -55,4 +63,18 @@
  }
  .recipe-list.steps {
 	list-style-type: decimal;
+ }
+
+ html {
+	box-sizing: border-box;
+ }
+
+ *, 
+ *::before,
+ *::after {
+	box-sizing: inherit;
+ }
+
+ body {
+	background-color: lavenderblush;
  }
